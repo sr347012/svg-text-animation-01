@@ -1,0 +1,124 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to top, rgb(134,3,3,0.8), rgb
+    (255,143,143)); 
+    background: aliceblue
+
+}
+
+#one {
+    /* color: whitesmoke; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#one path{
+    fill: none;
+    stroke-dasharray: 550px;
+    transform-origin: 15% 25% ;
+}
+h1{
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: vanish2 5s ease;
+    background-color: brown;
+    
+}
+@keyframes vanish2 {
+    0% {
+        transform: rotateX(0deg);
+        transform: rotateY(0deg);
+        transform: rotateZ(0deg);     
+    }    
+    25% {
+        transform: rotateX(45deg); 
+        transform: rotateY(45deg);
+        transform: rotateZ(45deg);   
+    }
+    75% {
+        transform: rotateX(-45deg); 
+        transform: rotateY(-45deg);
+        transform: rotateZ(-45deg);   
+    }
+    100% {
+        transform: rotateX(0deg); 
+        transform: rotateY(0deg);
+        transform: rotateZ(0deg);   
+    }
+}
+
+@keyframes vanish {
+    0% {
+        /* transform: rotate(0deg);      */
+        /* rotateY: (0deg);
+        rotateZ: (0deg);  */
+        stroke-dashoffset: 550px;
+    }    
+    25% {
+        /* /* opacity: 1; */
+        /* transform: rotate(30deg);      */
+        stroke-dashoffset: 450px;
+    }
+
+    75% {
+        /* /* opacity: 1; */
+        /* transform: rotate(-30deg);      */
+        stroke-dashoffset: 250px;
+    }
+    100% {
+        /* /* opacity: 0.2; */
+        /* transform: rotate(0deg);      */
+        stroke-dashoffset: 0px;
+    }
+}
+#one path:nth-child(1){
+    animation: vanish 0.5s ease;
+    animation: vanish2 2s ease;
+}
+#one path:nth-child(2){
+    animation: vanish 0.5s ease ;
+    animation-delay: 0.5s;
+    animation: vanish2 2s ease;
+
+}
+#one path:nth-child(3){
+    animation: vanish 0.5s ease ;
+    animation: vanish2 2s ease;
+    animation-delay: 1s;
+
+}
+#one path:nth-child(4){
+    animation: vanish 0.5s ease ;
+    animation: vanish2 2s ease;
+    animation-delay: 1.5s;
+
+}
+
+#one path:nth-child(5){
+    animation: vanish 0.5s ease ;
+    animation: vanish2 2s ease;
+    animation-delay: 2s;
+
+}
+#one path:nth-child(6){
+    animation: vanish2 2s ease;
+    animation: vanish 0.5s ease ;
+    animation-delay: 2.5s;
+
+}
+#one path:nth-child(7){
+    animation: vanish2 2s ease;
+    animation: vanish 0.5s ease ;
+    animation-delay: 3s;
+
+}
