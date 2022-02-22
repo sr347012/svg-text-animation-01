@@ -6,7 +6,9 @@ body {
     box-sizing: border-box;
     background: linear-gradient(to top, rgb(134,3,3,0.8), rgb
     (255,143,143)); 
-    background: aliceblue
+    background: aliceblue;
+    font-family: 'cambria';
+    font-size: 18px;
 
 }
 
@@ -36,23 +38,23 @@ h1{
 }
 @keyframes vanish2 {
     0% {
-        transform: rotateX(0deg);
-        transform: rotateY(0deg);
+        /* transform: rotateX(0deg); */
+        /* transform: rotateY(0deg); */
         transform: rotateZ(0deg);     
     }    
     25% {
-        transform: rotateX(45deg); 
-        transform: rotateY(45deg);
+        /* transform: rotateX(45deg);  */
+        /* transform: rotateY(45deg); */
         transform: rotateZ(45deg);   
     }
     75% {
-        transform: rotateX(-45deg); 
-        transform: rotateY(-45deg);
+        /* transform: rotateX(-45deg);  */
+        /* transform: rotateY(-45deg); */
         transform: rotateZ(-45deg);   
     }
     100% {
-        transform: rotateX(0deg); 
-        transform: rotateY(0deg);
+        /* transform: rotateX(0deg);  */
+        /* transform: rotateY(0deg); */
         transform: rotateZ(0deg);   
     }
 }
@@ -82,6 +84,7 @@ h1{
     }
 }
 #one path:nth-child(1){
+    animation-delay: 0s;
     animation: vanish 0.5s ease;
     animation: vanish2 2s ease;
 }
@@ -121,4 +124,46 @@ h1{
     animation: vanish 0.5s ease ;
     animation-delay: 3s;
 
+}
+
+#two {
+    /* color: whitesmoke; */
+    position: absolute;
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%,-50%); */
+}
+
+#rightArc {
+    stroke-dasharray: 10px;
+}
+
+#leftArc {
+    stroke-dasharray: 10px;
+}
+
+#txt1 {
+    z-index: 1;
+}
+
+#my-form{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid; */
+    width: 30%;
+    align-items: flex-start; 
+    margin-left: 20px;;
+    z-index: 5;
+}
+
+.label{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.input {
+    border-radius: 2px;
+}
+.input:hover {
+    box-shadow: inset 2px 2px 2px black, 1px 1px 2px black;
 }
